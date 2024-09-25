@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fundo branco */
+    color: #333; /* Texto escuro */
+}
+
+.header {
+    background-color: #e0f7e7; /* Verde clarinho */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66bb6a; /* Verde escuro no hover */
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    display: flex; /* Usar flexbox para alinhar os produtos */
+    flex-wrap: wrap; /* Permitir que os produtos quebrem em múltiplas linhas */
+    justify-content: space-between; /* Espaçar uniformemente os produtos */
+    padding: 20px;
+}
+
+.product {
+    background-color: #ffffff; /* Fundo branco para cada produto */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno reduzido */
+    margin-bottom: 20px; /* Espaço entre os produtos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
+    width: 45%; /* Definir largura para pequenos produtos */
+    max-width: 200px; /* Limitar a largura máxima dos produtos */
+}
+
+.product img {
+    max-width: 80%; /* Tamanho médio das imagens dos produtos */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+    max-height: 150px; /* Limitar altura das imagens */
+}
+
+@media (max-width: 600px) {
+    .product {
+        width: 100%; /* Fazer os produtos ocuparem 100% em telas menores */
+        max-width: none; /* Remover limite de largura máxima em telas pequenas */
+    }
+}
+
+h2 {
+    color: #66bb6a; /* Verde escuro */
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+h3 {
+    color: #333; /* Cor escura para os títulos das árvores */
+    margin-top: 10px; /* Espaço acima dos títulos */
+}
+
+p {
+    line-height: 1.6; /* Melhor legibilidade */
+    margin-bottom: 15px; /* Espaço entre os parágrafos */
+}
+
+.footer {
+    background-color: #e0f7e7; /* Verde clarinho */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

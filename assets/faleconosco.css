@@ -1,0 +1,111 @@
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #e0f7e7; /* Verde clarinho */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66bb6a; /* Verde escuro no hover */
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    flex: 1; /* Faz o container ocupar o espaço disponível */
+}
+
+.form-container {
+    display: flex; /* Alinha a imagem e o formulário lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.foto {
+    flex: 1; /* A imagem ocupa uma parte do espaço */
+    margin-right: 20px; /* Espaço entre a imagem e o formulário */
+}
+
+.foto img {
+    max-width: 100%; /* Imagem responsiva */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+.model {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    flex: 2; /* O formulário ocupa mais espaço que a imagem */
+}
+
+label {
+    color: black; /* Cor do texto */
+    display: block; /* Para que o label ocupe toda a linha */
+    margin-bottom: 10px; /* Espaço abaixo do label */
+}
+
+select, input[type="submit"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaço acima */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda leve */
+}
+
+input[type="submit"] {
+    background-color: #66bb6a; /* Verde escuro */
+    color: white; /* Texto branco */
+    cursor: pointer; /* Cursor de mão */
+}
+
+input[type="submit"]:hover {
+    background-color: #559e4e; /* Cor de fundo no hover */
+}
+
+footer {
+    background-color: #e0f7e7; /* Verde clarinho */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

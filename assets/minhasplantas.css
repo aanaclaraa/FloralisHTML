@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fundo branco */
+    color: #333; /* Texto escuro */
+}
+
+.header {
+    background-color: #e0f7e7; /* Verde clarinho */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66bb6a; /* Verde escuro no hover */
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Aumentei o tamanho mínimo */
+    gap: 20px;
+}
+
+.model {
+    position: relative;
+    overflow: hidden; /* Para evitar que o texto ultrapasse a imagem */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.model:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.model img {
+    width: 100%; /* Para garantir que as imagens ocupem toda a largura do contêiner */
+    height: 200px; /* Altura fixa para padronizar o tamanho das imagens */
+    object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+    border-radius: 8px; /* Borda arredondada nas imagens */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px; /* Borda arredondada na parte inferior */
+}
+
+.text-overlay h3 {
+    margin: 0;
+    color: #66bb6a; /* Verde escuro */
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px; /* Espaçamento em torno do título */
+    background-color: #e0f7e7; /* Fundo verde clarinho */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.titulo h2 {
+    margin: 0; /* Remove margens padrão */
+    color: #66bb6a; /* Verde escuro */
+    font-size: 2rem; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center;
+}
+
+
+footer {
+    background-color: #e0f7e7; /* Verde clarinho */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

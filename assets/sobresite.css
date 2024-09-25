@@ -1,0 +1,69 @@
+/* assets/sobresite.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fundo branco */
+    color: #333; /* Texto escuro */
+}
+
+.header {
+    background-color: #e0f7e7; /* Verde clarinho */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66bb6a; /* Verde escuro no hover */
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+h1, h2 {
+    color: #66bb6a; /* Verde escuro */
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+p {
+    line-height: 1.6; /* Melhor legibilidade */
+    margin-bottom: 15px; /* Espaço entre os parágrafos */
+}
+
+footer {
+    background-color: #e0f7e7; /* Verde clarinho */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
